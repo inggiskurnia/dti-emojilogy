@@ -24,7 +24,7 @@ const FetchEmoji: FC = () => {
   };
 
   return (
-    <div className='flex flex-col items-center px-[100px]'>
+    <div className='flex flex-col items-center px-[100px] pt-[100px]'>
       <h1 className="text-[20px] italic cursor-pointer" onClick={() => fetchEmoji()}>Click it!</h1>
       {loading ? (
         <p>Loading...</p>
