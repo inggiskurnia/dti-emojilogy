@@ -1,5 +1,6 @@
 import MobileWrapper from "@/components/MobileWrapper";
 import "./globals.css";
+import EmojiProvider from "@/context/EmojiProvider";
 
 interface RootLayoutProps {
   children: JSX.Element;
@@ -10,7 +11,9 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
     <html lang="en">
       <body>
         <MobileWrapper>
-          {children}
+          <EmojiProvider>
+            {children}
+          </EmojiProvider>   
         </MobileWrapper>
       </body>
     </html>
